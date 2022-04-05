@@ -13,35 +13,36 @@
             background: #ddd;
             padding: 10px;
         }
+
         h2 {
             margin-top: 20px;
         }
+
         footer {
             margin: 20px;
         }
     </style>
 </head>
 <body>
+<div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
         <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                {{ render_nav_item('home', 'Home', use_li=True) }}
-{#                {{ render_nav_item('test_form', 'Form', use_li=True) }}#}
-{#                {{ render_nav_item('test_nav', 'Nav', use_li=True) }}#}
-{#                {{ render_nav_item('test_pagination', 'Pagination', use_li=True) }}#}
-{#                {{ render_nav_item('test_flash', 'Flash Messages', use_li=True) }}#}
-{#                {{ render_nav_item('test_table', 'Table', use_li=True) }}#}
-{#                {{ render_nav_item('test_icon', 'Icon', use_li=True) }}#}
-                <li class="nav-item"><a class="nav-link" href="https://bootstrap-flask.readthedocs.io/" target="_blank">Documentation</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">Bootstrap Documentation</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/greyli/bootstrap-flask" target="_blank">GitHub</a></li>
-            </ul>
-        </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    {{ render_nav_item('home', 'Magnetic Medical System', use_li=True) }}
+                    {{ render_nav_item('home', 'Real-time Data', use_li=True) }}
+                    {{ render_nav_item('configuration', 'System Configuration', use_li=True) }}
+                    <li class="nav-item"><a class="nav-link"
+                                            href="http://cuhklizhanggroup.com/index.php?c=content&a=list&catid=38"
+                                            target="_blank">Lab Director</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://www.cuhklizhanggroup.com/"
+                                            target="_blank">About</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -50,13 +51,14 @@
         {% block content %}{% endblock %}
     </main>
 
-    <footer class="text-center">
+
+    <footer class="text-center pt-5 my-5 text-muted border-top">
         {% block footer %}
-            <small> &copy; 2018–<script>document.write(new Date().getFullYear())</script> <a href="https://github.com/greyli">Grey Li</a>
-            </small>
+            &copy; 2022 The Advanced Nanomaterials and Microrobotics Laboratory, CUHK
         {% endblock %}
     </footer>
 
     {{ bootstrap.load_js() }}
+</div>
 </body>
 </html>

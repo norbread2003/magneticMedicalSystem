@@ -18,14 +18,14 @@ def home():
     )
 
 
-@app.route('/about')
-def about():
+@app.route('/configuration')
+def configuration():
     """Renders the about page."""
     return render_template(
-        'about.html',
-        title='About',
+        'configuration.html',
+        title='System Configuration',
         year=datetime.now().year,
-        message='Your application description page.'
+        message='System Configuration'
     )
 
 

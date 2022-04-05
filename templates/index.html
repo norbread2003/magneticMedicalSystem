@@ -1,13 +1,51 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <h1>Magnetic Medical System</h1>
-<ul>
-{#    <li><a href="{{ url_for('test_form') }}">Form</a></li>#}
-{#    <li><a href="{{ url_for('test_nav') }}">Nav</a></li>#}
-{#    <li><a href="{{ url_for('test_pagination') }}">Pagination</a></li>#}
-{#    <li><a href="{{ url_for('test_flash') }}">Flash Messages</a></li>#}
-{#    <li><a href="{{ url_for('test_table') }}">Table</a></li>#}
-{#    <li><a href="{{ url_for('test_icon') }}">Icon</a></li>#}
-</ul>
+    <h1>Welcome to ANML</h1>
+    <p class="fs-5 col-md-8">The Advanced Nanomaterials and Microrobotics Laboratory (ANML) is dedicated to an
+        interdisciplinary research programme that bridges micro-/nanotechnology and functional materials with MEMS and
+        robotics technology at small scales. The primary research objectives of the Laboratory range from development of
+        functional nanomaterials to intelligent micro-/nanoscale machines and robotic systems for biomedical, energy
+        storage and environmental applications. The motivation of our research is to develop enabling materials, tools
+        and systems, and technologies for the sustainable society and a better life.</p>
+
+    <div class="mb-5">
+        <a href="http://www.cuhklizhanggroup.com/index.php?c=content&a=list&catid=18"
+           class="btn btn-primary btn-lg px-4">View Research</a>
+    </div>
+
+    <hr class="col-3 col-md-2 mb-5">
+
+    <div class="row g-5">
+        <div class="col-md-6">
+            <h2>Starter projects</h2>
+            <p>Ready to beyond the starter template? Check out these open source projects that you can quickly duplicate
+                to a new GitHub repository.</p>
+            <ul class="icon-list">
+                <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm
+                    starter</a></li>
+                <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h2>Guides</h2>
+            <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+            <ul class="icon-list">
+                <li><a href="../getting-started/introduction/">Bootstrap quick start guide</a></li>
+                <li><a href="../getting-started/webpack/">Bootstrap Webpack guide</a></li>
+                <li><a href="../getting-started/parcel/">Bootstrap Parcel guide</a></li>
+                <li><a href="../getting-started/contribute/">Contributing to Bootstrap</a></li>
+            </ul>
+        </div>
+    </div>
+
+    {#<ul>#}
+    {#    <li><a href="{{ url_for('test_form') }}">Form</a></li>#}
+    {#    <li><a href="{{ url_for('test_nav') }}">Nav</a></li>#}
+    {#    <li><a href="{{ url_for('test_pagination') }}">Pagination</a></li>#}
+    {#    <li><a href="{{ url_for('test_flash') }}">Flash Messages</a></li>#}
+    {#    <li><a href="{{ url_for('test_table') }}">Table</a></li>#}
+    {#    <li><a href="{{ url_for('test_icon') }}">Icon</a></li>#}
+    {#</ul>#}
 {% endblock %}
