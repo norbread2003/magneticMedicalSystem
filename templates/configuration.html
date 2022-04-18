@@ -1,27 +1,143 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <h1>Magnetic Medical System Configuration</h1>
+    <div class="py-3 text-center">
+        <h1>Magnetic Medical System Configuration</h1>
+    </div>
     <div class="row g-5">
         <div class="col-md-5 col-lg-4 order-md-last">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
-                <span class="text-primary">Your cart</span>
-                <span class="badge bg-primary rounded-pill">3</span>
+                <span class="text-primary">Location Info</span>
             </h4>
             <ul class="list-group mb-3">
                 <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div>
-                        <h6 class="my-0">Product name</h6>
-                        <small class="text-muted">Brief description</small>
+                    <div class="col-sm-3">
+                        <label for="location_x0" class="form-label">X0</label>
+                        <input type="text" class="form-control" id="location_x0" placeholder="" value="0" required>
+                        <div class="invalid-feedback">
+                            Valid XO is required.
+                        </div>
                     </div>
-                    <span class="text-muted">$12</span>
+
+                    <div class="col-sm-3">
+                        <label for="location_y0" class="form-label">Y0</label>
+                        <input type="text" class="form-control" id="location_y0" placeholder="" value="0" required>
+                        <div class="invalid-feedback">
+                            Valid XO is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="location_z0" class="form-label">Z0</label>
+                        <input type="text" class="form-control" id="location_z0" placeholder="" value="0" required>
+                        <div class="invalid-feedback">
+                            Valid XO is required.
+                        </div>
+                    </div>
                 </li>
                 <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div>
-                        <h6 class="my-0">Second product</h6>
-                        <small class="text-muted">Brief description</small>
+                    <div class="col-sm-3">
+                        <label for="location_x" class="form-label">X</label>
+                        <input type="text" class="form-control" id="location_x" placeholder="" value="0" required>
+                        <div class="invalid-feedback">
+                            Valid XO is required.
+                        </div>
                     </div>
-                    <span class="text-muted">$8</span>
+
+                    <div class="col-sm-3">
+                        <label for="location_y" class="form-label">Y</label>
+                        <input type="text" class="form-control" id="location_y" placeholder="" value="0" required>
+                        <div class="invalid-feedback">
+                            Valid XO is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="location_z" class="form-label">Z</label>
+                        <input type="text" class="form-control" id="location_z" placeholder="" value="0" required>
+                        <div class="invalid-feedback">
+                            Valid XO is required.
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div class="col-sm-3">
+                        <label for="location_dxp" class="form-label">D XP</label>
+                        <input type="text" class="form-control" id="location_dxp" placeholder="" value="60" required>
+                        <div class="invalid-feedback">
+                            Valid D_XP is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="location_dxn" class="form-label">D XN</label>
+                        <input type="text" class="form-control" id="location_dxn" placeholder="" value="60" required>
+                        <div class="invalid-feedback">
+                            Valid D_XN is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="location_dyp" class="form-label">D YP</label>
+                        <input type="text" class="form-control" id="location_dyp" placeholder="" value="60" required>
+                        <div class="invalid-feedback">
+                            Valid D_YP is required.
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div class="col-sm-3">
+                        <label for="location_angle_xp" class="form-label">Angle XP</label>
+                        <input type="text" class="form-control" id="location_angle_xp" placeholder="" value="45"
+                               required>
+                        <div class="invalid-feedback">
+                            Valid D_XP is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="location_angle_xn" class="form-label">Angle XN</label>
+                        <input type="text" class="form-control" id="location_angle_xn" placeholder="" value="45"
+                               required>
+                        <div class="invalid-feedback">
+                            Valid D_XN is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="location_angle_yp" class="form-label">Angle YP</label>
+                        <input type="text" class="form-control" id="location_angle_yp" placeholder="" value="45"
+                               required>
+                        <div class="invalid-feedback">
+                            Valid D_YP is required.
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div class="col-sm-5">
+                        <label for="location_delay" class="form-label">Delay</label>
+                        <input type="text" class="form-control" id="location_delay" placeholder="" value="500" required>
+                        <div class="invalid-feedback">
+                            Valid Delay is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <label for="location_numeric" class="form-label">Numeric 5</label>
+                        <input type="text" class="form-control" id="location_numeric" placeholder="" value="0" required>
+                        <div class="invalid-feedback">
+                            Valid Numeric 5 is required.
+                        </div>
+                    </div>
+                </li>
+                 <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div class="col-sm-12">
+                        <label for="system_target_ip" class="form-label">Target IP Address</label>
+                        <input type="text" class="form-control" id="system_target_ip" placeholder="172.22.0.1" value="" required>
+                        <div class="invalid-feedback">
+                            Valid Target IP Address is required.
+                        </div>
+                    </div>
                 </li>
                 <li class="list-group-item d-flex justify-content-between lh-sm">
                     <div>
@@ -51,9 +167,77 @@
             </form>
         </div>
         <div class="col-md-7 col-lg-8">
-            <h4 class="mb-3">Billing address</h4>
+            <h4 class="mb-3">Client Info</h4>
             <form class="needs-validation" novalidate>
                 <div class="row g-3">
+                    <div class="col-md-5">
+                        <label for="server_client" class="form-label">Server Client</label>
+                        <select class="form-select" id="server_client" required>
+                            <option value="">Choose...</option>
+                            <option>TCP Server</option>
+                            <option>UDP Server</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid server client.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="ip_address" class="form-label">IP Address</label>
+                        <input type="text" class="form-control" id="ip_address" placeholder="192.168.0.1" required>
+                        <div class="invalid-feedback">
+                            IP Address required.
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="port" class="form-label">Port</label>
+                        <input type="text" class="form-control" id="port" placeholder="8081" required>
+                        <div class="invalid-feedback">
+                            IP Address port required.
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <input id="system_time" type="checkbox" class="form-check-input">
+                            <label class="form-check-label" for="system_time">Time</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-check">
+                            <input id="system_linefeed" type="checkbox" class="form-check-input">
+                            <label class="form-check-label" for="system_linefeed">Auto linefeed</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-check">
+                            <input id="system_hex" type="checkbox" class="form-check-input">
+                            <label class="form-check-label" for="system_hex">Hex</label>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3">Parameter Setting</h4>
+
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                   required>
+                            <label class="form-check-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Debit card</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+
                     <div class="col-sm-6">
                         <label for="firstName" class="form-label">First name</label>
                         <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
