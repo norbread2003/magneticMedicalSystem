@@ -18,6 +18,16 @@ def home():
     )
 
 
+@app.route('/data')
+def data():
+    """Renders the about page."""
+    return render_template(
+        'data.html',
+        title='Real-time Data',
+        year=datetime.now().year
+    )
+
+
 @app.route('/configuration')
 def configuration():
     """Renders the about page."""

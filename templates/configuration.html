@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <div class="py-3 text-center">
+    <div class="py-3">
         <h1>Magnetic Medical System Configuration</h1>
     </div>
     <div class="row g-5">
@@ -10,8 +10,8 @@
                 <span class="text-primary">Location Info</span>
             </h4>
             <ul class="list-group mb-3">
-                <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div class="col-sm-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm" style="padding: 0.5rem 0 0.5rem 1rem">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_x0" class="form-label">X0</label>
                         <input type="text" class="form-control" id="location_x0" placeholder="" value="0" required>
                         <div class="invalid-feedback">
@@ -19,7 +19,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_y0" class="form-label">Y0</label>
                         <input type="text" class="form-control" id="location_y0" placeholder="" value="0" required>
                         <div class="invalid-feedback">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_z0" class="form-label">Z0</label>
                         <input type="text" class="form-control" id="location_z0" placeholder="" value="0" required>
                         <div class="invalid-feedback">
@@ -35,8 +35,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div class="col-sm-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm" style="padding: 0.5rem 0 0.5rem 1rem">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_x" class="form-label">X</label>
                         <input type="text" class="form-control" id="location_x" placeholder="" value="0" required>
                         <div class="invalid-feedback">
@@ -44,7 +44,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_y" class="form-label">Y</label>
                         <input type="text" class="form-control" id="location_y" placeholder="" value="0" required>
                         <div class="invalid-feedback">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_z" class="form-label">Z</label>
                         <input type="text" class="form-control" id="location_z" placeholder="" value="0" required>
                         <div class="invalid-feedback">
@@ -60,8 +60,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div class="col-sm-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm" style="padding: 0.5rem 0 0.5rem 1rem">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_dxp" class="form-label">D XP</label>
                         <input type="text" class="form-control" id="location_dxp" placeholder="" value="60" required>
                         <div class="invalid-feedback">
@@ -69,7 +69,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_dxn" class="form-label">D XN</label>
                         <input type="text" class="form-control" id="location_dxn" placeholder="" value="60" required>
                         <div class="invalid-feedback">
@@ -77,7 +77,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_dyp" class="form-label">D YP</label>
                         <input type="text" class="form-control" id="location_dyp" placeholder="" value="60" required>
                         <div class="invalid-feedback">
@@ -85,8 +85,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div class="col-sm-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm" style="padding: 0.5rem 0 0.5rem 1rem">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_angle_xp" class="form-label">Angle XP</label>
                         <input type="text" class="form-control" id="location_angle_xp" placeholder="" value="45"
                                required>
@@ -95,8 +95,8 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
-                        <label for="location_angle_xn" class="form-label">Angle XN</label>
+                    <div class="col-sm-4" style="padding-right: 1rem">
+                        <label for="location_angle_xn" class="form-label" style="white-space: nowrap">Angle XN</label>
                         <input type="text" class="form-control" id="location_angle_xn" placeholder="" value="45"
                                required>
                         <div class="invalid-feedback">
@@ -104,7 +104,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_angle_yp" class="form-label">Angle YP</label>
                         <input type="text" class="form-control" id="location_angle_yp" placeholder="" value="45"
                                required>
@@ -113,9 +113,8 @@
                         </div>
                     </div>
                 </li>
-
-                <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div class="col-sm-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm" style="padding: 0.5rem 0 0.5rem 1rem">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_field_x" class="form-label">X Field</label>
                         <input type="text" class="form-control" id="location_field_x" placeholder="" value="0"
                                required>
@@ -124,7 +123,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_field_y" class="form-label">Y Field</label>
                         <input type="text" class="form-control" id="location_field_y" placeholder="" value="0"
                                required>
@@ -133,7 +132,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-4" style="padding-right: 1rem">
                         <label for="location_field_z" class="form-label">Z Field</label>
                         <input type="text" class="form-control" id="location_field_z" placeholder="" value="0"
                                required>
@@ -144,7 +143,7 @@
                 </li>
 
                 <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div class="col-sm-5">
+                    <div class="col-sm-6" style="padding-right: 0.5rem">
                         <label for="location_delay" class="form-label">Delay</label>
                         <input type="text" class="form-control" id="location_delay" placeholder="" value="500" required>
                         <div class="invalid-feedback">
@@ -152,7 +151,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-5">
+                    <div class="col-sm-6" style="padding-left:0.5rem">
                         <label for="location_numeric" class="form-label">Numeric 5</label>
                         <input type="text" class="form-control" id="location_numeric" placeholder="" value="0" required>
                         <div class="invalid-feedback">
@@ -172,10 +171,27 @@
                 </li>
             </ul>
 
-            <form class="card p-2">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Current Status">
-                    <button type="submit" class="btn btn-secondary">Stop</button>
+            <form class="card" style="padding: 0.5rem 1rem">
+                <div class="input-group" style="flex-direction: column">
+                    <div>
+                        <label for="system_target_ip" class="form-label">Current Status</label>
+                    </div>
+                    <div style="display: flex">
+                        <input
+                                type="text"
+                                class="form-control"
+                                readonly
+                                placeholder="Current Status"
+                                style="border-radius: 0.25rem 0 0 0.25rem"
+                        >
+                        <button
+                                type="submit"
+                                class="btn btn-secondary"
+                                style="border-radius: 0 0.25rem 0.25rem 0"
+
+                        >
+                            Stop</button>
+                    </div>
                 </div>
             </form>
         </div>

@@ -21,6 +21,42 @@
         footer {
             margin: 20px;
         }
+
+        .receiveDataContainer {
+            display: flex;
+        }
+        .receiveData {
+            {#display: flex;#}
+        }
+
+        .receiveDataView {
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(0,0,0,0.125);
+            {#background: rgba(0,0,0,0.05);#}
+            background:rgba(233,236,239,0.6);
+            border-radius: 0.25rem;
+            overflow-y: scroll;
+            padding:0.5rem
+        }
+
+        .receiveDataInput {
+            {#background: blue;#}
+            width: 100%;
+            padding-left: 1rem;
+            overflow-y: auto;
+        }
+
+        .receiveDataInput > div {
+            border: 1px solid rgba(0,0,0,0.125);
+            border-radius: 0.25rem;
+            padding: 0 0 0.5rem 1rem;
+        }
+
+        .receiveDataInput > div:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
     </style>
 </head>
 <body>
@@ -34,7 +70,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     {{ render_nav_item('home', 'Magnetic Medical System', use_li=True) }}
-                    {{ render_nav_item('home', 'Real-time Data', use_li=True) }}
+                    {{ render_nav_item('data', 'Real-time Data', use_li=True) }}
                     {{ render_nav_item('configuration', 'System Configuration', use_li=True) }}
                     <li class="nav-item"><a class="nav-link"
                                             href="http://cuhklizhanggroup.com/index.php?c=content&a=list&catid=38"
